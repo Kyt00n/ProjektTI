@@ -1,0 +1,66 @@
+.topbar {
+    overflow: hidden;
+    background-color: #C6AC8F;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#topbar_title{
+    display: flex;
+    text-align: center;
+    font-size: 32px;
+    margin-right: auto;
+}
+.topbar a {
+    padding: 15px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    
+}
+.topbar a:hover {
+    background-color: #EAE0D5;
+}
+
+.topbar a.active {
+    background-color:#EAE0D5
+}
+#smol_title{
+    display: none;
+}
+@media only screen and (max-width: 850px) {
+    .topbar{
+        justify-content: space-around;
+    }
+    #smol_title{
+        display: flex;
+        text-align: center;
+        font-size: 32px;
+        margin-right: auto;
+    }
+    #topbar_title{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .topbar{
+        flex-direction: column;
+    }
+    #smol_title{
+        display: flex;
+        text-align: center;
+        font-size: 32px;
+        justify-content: center;
+    }
+    #topbar_title{
+        display: none;
+    }
+}

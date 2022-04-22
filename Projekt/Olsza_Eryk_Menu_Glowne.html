@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7b6742a07b.js" crossorigin="anonymous"></script>
+    <title>MainMenu</title>
+    <link rel="stylesheet" media="screen" href="Styles/styl_menu_glowne.css"/>
+</head>
+<body>
+
+    <header>
+        <div id="topmenu"class="topbar">
+            <strong id="topbar_title">HistoriaGotowania</strong>
+            <a class="active" href="#home">Home</a>
+            <a href="#recipies">Recepies</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </header>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var topmenu = document.getElementById("topmenu");
+        var sticky = topmenu.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            topmenu.classList.add("sticky")
+          } else {
+            topmenu.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>
